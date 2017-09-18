@@ -1,5 +1,13 @@
 /*All styling by Musa Farouk*/
 
+@media screen and (min-width: 0px) and (max-width: 299px)
+{
+	html
+	{
+		display: none;
+	}
+}
+
 /*Media Query for Smartphones*/
 @media screen and (min-width: 300px) and (max-width: 374px)
 {
