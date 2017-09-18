@@ -41,11 +41,23 @@
 	.right-nav
 	{
 		float: right;
+		display: none;
 		
+	}
+
+	.right-nav-2
+	{
+		float: right;
+	}
+
+	.right-nav-2
+	{
+		padding-top: 5px;
 	}
 	.right-nav ul
 	{
 		list-style-type: none;
+		
 	}
 	.right-nav ul li
 	{
@@ -62,7 +74,7 @@
 		padding-left: 8px;
 		padding-right: 8px;
 		font-family: 'Chalkboard';
-		font-size: 2px;
+		font-size: 5px;
 
 		transition: all 0.5s ease-in;
 	}
@@ -73,6 +85,45 @@
 		transform: scale3d(2);
 		background-color: #000000;
 	}
+
+	/*Contact Button Styling Starts here*/
+		.contact-btn
+		{
+			/* top: */
+			background: #FFFFFF;
+			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.13);
+			border-radius: 10px;
+			color: #333;
+			padding: 10px;
+			width: 100px;
+			text-align: center;
+			cursor: pointer;
+			opacity: 1;
+			transition: all 0.5s ease-in;
+		}
+		/*contact button link*/
+		.contact-btn a
+		{
+			text-decoration: none;
+			font-family: 'Chalkboard';
+			font-weight: bold;
+			font-size: 12px;
+			color: #000000;
+			opacity: 1;
+			transition: all 0.5s ease-in;
+		}
+		/*Contact button interactivity*/
+		.contact-btn:hover
+		{
+			
+			box-shadow: 0 4px 4px 0 rgba(0,0,0,0.90);
+			transition: all 0.5s ease-in;
+		}
+		.contact-btn a:hover
+		{
+			opacity: 0.9;
+			transition: all 0.5s ease-in;
+		}
 
 	/*Introduction section starts here*/
 	.introduction
@@ -243,11 +294,12 @@
 	/*Socialbuttons styling starts here*/
 	.social-buttons
 	{
-		text-align: right;
+		/*text-align: center;*/
 	}
 	.social-buttons ul li
 	{
 		display: inline;
+		padding-left: 40px;
 	}
 	.social-buttons-img
 	{
@@ -298,9 +350,16 @@
 
 	/*RIght Navigation section starts here*/
 	.right-nav
-	{
-		float: right;
-	}
+		{
+			float: right;
+			display: none;
+			
+		}
+
+		.right-nav-2
+		{
+			float: right;
+		}
 	.right-nav ul
 	{
 		list-style-type: none;
@@ -329,7 +388,44 @@
 		transform: scale3d(2);
 		background-color: #000000;
 	}
-
+	/*Contact Button Styling Starts here*/
+		.contact-btn
+		{
+			/* top: */
+			background: #FFFFFF;
+			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.13);
+			border-radius: 10px;
+			color: #333;
+			padding: 15px;
+			width: 100px;
+			text-align: center;
+			cursor: pointer;
+			opacity: 1;
+			transition: all 0.5s ease-in;
+		}
+		/*contact button link*/
+		.contact-btn a
+		{
+			text-decoration: none;
+			font-family: 'Chalkboard';
+			font-weight: bold;
+			font-size: 12px;
+			color: #000000;
+			opacity: 1;
+			transition: all 0.5s ease-in;
+		}
+		/*Contact button interactivity*/
+		.contact-btn:hover
+		{
+			
+			box-shadow: 0 4px 4px 0 rgba(0,0,0,0.90);
+			transition: all 0.5s ease-in;
+		}
+		.contact-btn a:hover
+		{
+			opacity: 0.9;
+			transition: all 0.5s ease-in;
+		}
 	/*Introduction section starts here*/
 	.introduction
 	{
@@ -541,6 +637,11 @@
 	.right-nav
 	{
 		float: right;
+	}
+
+	.right-nav-2
+	{
+		display: none;
 	}
 	.right-nav ul
 	{
