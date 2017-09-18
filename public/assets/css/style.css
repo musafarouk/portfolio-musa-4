@@ -743,6 +743,7 @@
 		column-width: 250px;
 		column-gap: 1px;
 		background-color: inherit;
+		text-align: center;
 	}
 
 	/*Portfolio image*/
