@@ -598,7 +598,7 @@
 }
 
 /*Media Query for desktops and large screens*/
-@media screen and (min-width: 960px)
+@media screen and (min-width: 960px) and (max-width: 2000px)
 {
 	html
 	{
@@ -759,7 +759,7 @@
 
 	section img
 	{
-		width: 200px;
+		width: 180px;
 		border-color: #fff;/*
 		border-radius: 5px;
 		border-width: 10px;
