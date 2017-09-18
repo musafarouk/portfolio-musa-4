@@ -1,0 +1,770 @@
+/*All styling by Musa Farouk*/
+
+/*Media Query for Smartphones*/
+@media screen and (min-width: 300px) and (max-width: 374px)
+{
+	html
+	{
+		/*background-color: #7C27B0;*/
+	}
+
+	/*Container to put a margin in divs*/
+	.container
+	{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	/*Navigation section starts here*/
+	.nav
+	{
+		width: 100%; 
+		box-shadow: 0px 4px 4px 0px rgba(0,0,0,.50);
+		background-color: #fff;
+		padding-bottom: 60px;
+		padding-top: 10px;
+		border-radius: 3px;
+	}
+
+	/*Left Navigation section starts here*/
+	.left-nav
+	{
+		float: left;
+	}
+
+	.left-nav img
+	{
+		padding: 5px;
+	}
+
+	/*RIght Navigation section starts here*/
+	.right-nav
+	{
+		float: right;
+		
+	}
+	.right-nav ul
+	{
+		list-style-type: none;
+	}
+	.right-nav ul li
+	{
+		display: inline;
+	}
+
+	.right-nav ul li a
+	{
+		border-radius: 3px;
+		color: #000;
+		text-decoration: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-family: 'Chalkboard';
+		font-size: 2px;
+
+		transition: all 0.5s ease-in;
+	}
+
+	.right-nav ul li a:hover
+	{
+		color: #FFFFFF;
+		transform: scale3d(2);
+		background-color: #000000;
+	}
+
+	/*Introduction section starts here*/
+	.introduction
+	{
+		margin-top: 2%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	/*nth child of p tags in introduction section*/
+	.introduction p:nth-child(1)
+	{
+		font-size: 20px;
+		font-family: 'Chalkboard';
+		color: #000000;
+		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
+	}
+	.introduction p span
+	{
+		font-family: 'Roboto';
+		color: #009688;
+		text-decoration: underline;
+	}
+	/*Skills section starts here*/
+	.skills
+	{
+		text-align: left;
+	}
+
+	.skills ul
+	{
+		list-style-type: none;
+	}
+
+	.skills ul li
+	{
+		padding: 5px;
+		font-family: 'Roboto';
+		font-size: 20px;
+		color: #000000;
+		display: inline-block;
+	}
+
+	.skills ul li span
+	{
+		color: #009688;
+		font-size: 30px;
+	}
+
+	/*Portfolio section*/
+	#gallery-container
+	{
+		background: #fff;
+		text-align: center;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	/*Portfolio header */
+	#gallery-container h1
+	{
+		font-size: 20px;
+		font-family: 'Chalkboard';
+		text-shadow: 0px 10px 10px #ccc;
+	}
+
+	/*Portfolio gallery*/
+	article
+	{
+		column-width: 250px;
+		column-gap: 1px;
+		background-color: inherit;
+	}
+
+	/*Portfolio image*/
+	section
+	{
+		display: inline-block;
+		padding: 10px;
+		border-radius: 2px;
+		transition: all 0.5s ease-in;
+		background-color: #000000;
+		margin-top: 15px;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+	}
+
+	section img
+	{
+		width: 200px;
+		border-color: #fff;/*
+		border-radius: 5px;
+		border-width: 10px;
+		border-style: solid;*/
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+	}
+
+	section:hover
+	{
+		transform: scale(1.05);
+		transition: al 0.5s ease-in;
+		transform: scale(1.05);
+		box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.70);
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		filter: grayscale(0);
+		background: lighten($baseColor, 8%);
+	}
+
+
+	section img:hover,
+	{
+		transform: scale(1.05);
+		box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.70);
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		filter: grayscale(0);
+		background: lighten($baseColor, 8%);
+	}
+
+	section p
+	{
+		font-family: 'Chalkboard';
+		font-size: 15px;
+		color: #FFFFFF;
+	}
+
+	section img.active
+	{
+		transform: scale(5);
+	}
+	/*Contact Info section*/
+	#contact-info
+	{
+		text-align: center;
+		padding-top: 20px;
+		/*background-image: linear-gradient(45deg, rgba(0,0,0,0.50) 0%, #FFFFFF 100%);
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);*/
+		border-radius: 5px;
+		height: auto;
+		width: auto;
+	}
+	#contact-info
+	{
+		font-family: 'Open Sans';
+		font-weight: bold;
+		color: #333;
+		letter-spacing: 1px;
+		padding: 10px;
+	}
+	#contact-info header
+	{
+		font-size: 30px;
+	}
+	#contact-info p
+	{
+		font-size: 12px;
+	}
+	/*Footer styling starts here*/
+	.footer p
+	{
+		font-family: 'Chalkboard';
+		font-weight: bold;
+		font-size: 8px;
+		letter-spacing: 1px;
+		color: #333;
+		padding: 10px;
+		text-align: center;
+	}
+	/*Socialbuttons styling starts here*/
+	.social-buttons
+	{
+		text-align: right;
+	}
+	.social-buttons ul li
+	{
+		display: inline;
+	}
+	.social-buttons-img
+	{
+	
+	}
+}
+
+
+
+
+
+/*Media Query for Phables/Tablets*/
+@media screen and (min-width: 375px) and (max-width: 959px)
+{
+	html
+	{
+		/*background-color: #7C27B0;*/
+	}
+
+	/*Container to put a margin in divs*/
+	.container
+	{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	/*Navigation section starts here*/
+	.nav
+	{
+		width: 100%; 
+		box-shadow: 0px 4px 4px 0px rgba(0,0,0,.50);
+		background-color: #fff;
+		padding-bottom: 60px;
+		padding-top: 10px;
+		border-radius: 3px;
+	}
+
+	/*Left Navigation section starts here*/
+	.left-nav
+	{
+		float: left;
+	}
+
+	.left-nav img
+	{
+		padding: 5px;
+	}
+
+	/*RIght Navigation section starts here*/
+	.right-nav
+	{
+		float: right;
+	}
+	.right-nav ul
+	{
+		list-style-type: none;
+	}
+	.right-nav ul li
+	{
+		display: inline;
+	}
+
+	.right-nav ul li a
+	{
+		border-radius: 3px;
+		color: #000;
+		text-decoration: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-family: 'Chalkboard';
+		transition: all 0.5s ease-in;
+	}
+
+	.right-nav ul li a:hover
+	{
+		color: #FFFFFF;
+		transform: scale3d(2);
+		background-color: #000000;
+	}
+
+	/*Introduction section starts here*/
+	.introduction
+	{
+		margin-top: 2%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	/*nth child of p tags in introduction section*/
+	.introduction p:nth-child(1)
+	{
+		font-size: 50px;
+		font-family: 'Chalkboard';
+		color: #000000;
+		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
+	}
+	.introduction p span
+	{
+		font-family: 'Roboto';
+		color: #009688;
+		text-decoration: underline;
+	}
+	/*Skills section starts here*/
+	.skills
+	{
+		text-align: center;
+	}
+
+	.skills ul
+	{
+		list-style-type: none;
+		left: 50%;
+	}
+
+	.skills ul li
+	{
+		padding: 5px;
+		font-family: 'Roboto';
+		font-size: 20px;
+		color: #000000;
+		display: inline-block;
+	}
+
+	.skills ul li span
+	{
+		color: #009688;
+		font-size: 30px;
+	}
+
+	/*Portfolio section*/
+	#gallery-container
+	{
+		background: #fff;
+		text-align: center;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	/*Portfolio header */
+	#gallery-container h1
+	{
+		font-family: 'Chalkboard';
+		text-shadow: 0px 10px 10px #ccc;
+	}
+
+	/*Portfolio gallery*/
+	article
+	{
+		column-width: 250px;
+		column-gap: 1px;
+		background-color: inherit;
+	}
+
+	/*Portfolio image*/
+	section
+	{
+		display: inline-block;
+		padding: 20px;
+		border-radius: 2px;
+		transition: all 0.5s ease-in;
+		background-color: #000000;
+		margin-top: 15px;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+	}
+
+	section img
+	{
+		width: 300px;
+		border-color: #fff;/*
+		border-radius: 5px;
+		border-width: 10px;
+		border-style: solid;*/
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+	}
+
+	section:hover
+	{
+		transform: scale(1.05);
+		transition: al 0.5s ease-in;
+		transform: scale(1.05);
+		box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.70);
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		filter: grayscale(0);
+		background: lighten($baseColor, 8%);
+	}
+
+
+	section img:hover,
+	{
+		transform: scale(1.05);
+		box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.70);
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		filter: grayscale(0);
+		background: lighten($baseColor, 8%);
+	}
+
+	section p
+	{
+		font-family: 'Chalkboard';
+		font-size: 25px;
+		color: #FFFFFF;
+	}
+	/*Contact info section*/
+	#contact-info
+	{
+		font-family: 'Avenir';
+		font-weight: bold;
+		color: #000000;
+		letter-spacing: 1px;
+		padding: 10px;
+		text-align: center;
+	}
+	#contact-info header
+	{
+		font-size: 40px;
+	}
+	#contact-info p
+	{
+		font-size: 20px;
+	}
+	/*Footer styling starts here*/
+	.footer p
+	{
+		font-family: 'Chalkboard';
+		font-weight: bold;
+		font-size: 12px;
+		letter-spacing: 1px;
+		color: #000000;
+		padding: 20px;
+		float: left;
+	}
+
+	/*Social button section starts here*/
+	.social-buttons
+	{
+		float: right;
+	}
+	.social-buttons ul li
+	{
+		display: inline;
+	}
+	.social-buttons-img
+	{
+		width: 20px;
+		height: 20px;
+		padding: 20px;
+	}
+}
+
+/*Media Query for desktops and large screens*/
+@media screen and (min-width: 960px) and (max-width: 2000px)
+{
+	html
+	{
+		/*background-color: #7C27B0;*/
+	}
+
+	/*Container to put a margin in divs*/
+	.container
+	{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	/*Navigation section starts here*/
+	.nav
+	{
+		width: 100%; 
+		box-shadow: 0px 4px 4px 0px rgba(0,0,0,.50);
+		background-color: #fff;
+		padding-bottom: 60px;
+		padding-top: 10px;
+		border-radius: 3px;
+	}
+
+	/*Left Navigation section starts here*/
+	.left-nav
+	{
+		float: left;
+	}
+
+	.left-nav img
+	{
+		padding: 5px;
+	}
+
+	/*RIght Navigation section starts here*/
+	.right-nav
+	{
+		float: right;
+	}
+	.right-nav ul
+	{
+		list-style-type: none;
+	}
+	.right-nav ul li
+	{
+		display: inline;
+	}
+
+	.right-nav ul li a
+	{
+		border-radius: 3px;
+		color: #000;
+		text-decoration: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-family: 'Chalkboard';
+		transition: all 0.5s ease-in;
+	}
+
+	.right-nav ul li a:hover
+	{
+		color: #FFFFFF;
+		transform: scale3d(2);
+		background-color: #000000;
+	}
+
+	/*Introduction section starts here*/
+	.introduction
+	{
+		margin-top: 2%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	/*nth child of p tags in introduction section*/
+	.introduction p:nth-child(1)
+	{
+		font-size: 70px;
+		font-family: 'Chalkboard';
+		color: #000000;
+		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.50);
+	}
+	.introduction p span
+	{
+		font-family: 'Roboto';
+		color: #009688;
+		text-decoration: underline;
+	}
+	/*Skills section starts here*/
+	.skills
+	{
+		text-align: center;
+	}
+
+	.skills ul
+	{
+		list-style-type: none;
+		left: 50%;
+	}
+
+	.skills ul li
+	{
+		padding: 5px;
+		font-family: 'Roboto';
+		font-size: 20px;
+		color: #000000;
+		display: inline-block;
+	}
+
+	.skills ul li span
+	{
+		color: #009688;
+		font-size: 30px;
+	}
+
+	/*Portfolio section*/
+	#gallery-container
+	{
+		background: #fff;
+		text-align: center;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	/*Portfolio header */
+	#gallery-container h1
+	{
+		font-family: 'Chalkboard';
+		text-shadow: 0px 10px 10px #ccc;
+	}
+
+	/*Portfolio gallery*/
+	article
+	{
+		column-width: 250px;
+		column-gap: 1px;
+		background-color: inherit;
+	}
+
+	/*Portfolio image*/
+	section
+	{
+		display: inline-block;
+		padding: 15px;
+		border-radius: 2px;
+		transition: all 0.5s ease-in;
+		background-color: #000000;
+		margin-top: 15px;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+	}
+
+	section img
+	{
+		width: 200px;
+		border-color: #fff;/*
+		border-radius: 5px;
+		border-width: 10px;
+		border-style: solid;*/
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+	}
+
+	section:hover
+	{
+		transform: scale(1.05);
+		transition: al 0.5s ease-in;
+		transform: scale(1.05);
+		box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.70);
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		filter: grayscale(0);
+		background: lighten($baseColor, 8%);
+	}
+
+
+	section img:hover,
+	{
+		transform: scale(1.05);
+		box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.70);
+		opacity: 1;
+		transition: all 0.5s ease-in;
+		filter: grayscale(0);
+		background: lighten($baseColor, 8%);
+	}
+
+	section p
+	{
+		font-family: 'Chalkboard';
+		font-size: 20px;
+		color: #FFFFFF;
+	}
+
+	section img.active
+	{
+		transform: scale(5);
+	}
+	/*Contact info section*/
+	#contact-info
+	{
+		font-family: 'Avenir';
+		font-weight: bold;
+		color: #000000;
+		letter-spacing: 1px;
+		padding: 10px;
+		text-align: center;
+	}
+	#contact-info header
+	{
+		font-size: 40px;
+	}
+	#contact-info p
+	{
+		font-size: 20px;
+	}
+	/*Footer styling starts here*/
+	.footer p
+	{
+		font-family: 'Chalkboard';
+		font-weight: bold;
+		font-size: 12px;
+		letter-spacing: 1px;
+		color: #000000;
+		padding: 20px;
+		float: left;
+	}
+
+	/*Social button section starts here*/
+	.social-buttons
+	{
+		float: right;
+	}
+	.social-buttons ul li
+	{
+		display: inline;
+	}
+	.social-buttons-img
+	{
+		width: 20px;
+		height: 20px;
+		padding: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
