@@ -1,15 +1,17 @@
 $(document).ready(function() {
 	//Your code goes here.
 
+
 	//The line below hides all the html elements 
 	$('html').hide();
+
 
 	//The line below slowly reveals the html elements after that guy up there hides them
 	$('html').fadeIn(2200);
 
+
 	//From this line below you'll see many failed attempts at adjusting my scrolling speed
 	//But i'll get it eventually
-
 	$('[href]').on('click', function(event) {
 		var target = $(this.getAttribute('href'));
 		if (target.length) {
@@ -20,6 +22,7 @@ $(document).ready(function() {
 		}
 	});
 	//And we finally got it without having to write some bulky shit that loops
+
 
 	/*This section handles the auto typing animation popularly known as typed*/
 	var TxtRotate = function(el, toRotate, period)
