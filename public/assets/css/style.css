@@ -110,7 +110,16 @@ body
   }
 }
 
+.left-nav a img
+{
+	transition: all 0.3s ease-in;
+}
 
+.left-nav a img:hover
+{
+	transform: scale(1.05);
+	transition: all 0.3s ease-in;
+}
 
 .footer
 {
@@ -135,8 +144,13 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+	transition: all 0.3s ease-in;
 }
 
+.social-buttons div span a img:hover
+{
+	margin-bottom: 5px;
+}
 
 
 
