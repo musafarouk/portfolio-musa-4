@@ -2,7 +2,7 @@ body
 {
 	background-image: url(../img/pexels-photo.jpg);
 	background-size: cover no-repeat;
-	background-color: #C86DD7;
+	background-color: #4A90E2;
 }
 
 @media screen and (min-width: 0px) and (max-width: 299px)
