@@ -1,157 +1,881 @@
-body
-{
-	background-image: url(../img/pexels-photo.jpg);
-	background-size: cover no-repeat;
-	background-color: #4A90E2;
+/*General page styling is here*/
+/*Body styling is here*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
-@media screen and (min-width: 0px) and (max-width: 299px)
-{
-	.introduction
-	{
-		top: 50%;
-		font-family: monospace;
-		font-size: 20px;
-		text-align: center;
-		color: #FFFFFF;
-		/*color: #2998E4;*/
-		text-rendering: optimizeLegibility;
-	}
-
-	.introduction p span
-	{
-		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
-	}
+body {
+	line-height: 1;
 }
 
-@media screen and (min-width: 300px) and (max-width: 374px)
-{
-	.introduction
-	{
-		top: 50%;
-		font-family: monospace;
-		font-size: 40px;
-		text-align: center;
-		color: #FFFFFF;
-		/*color: #2998E4;*/
-		text-rendering: optimizeLegibility;
-	}
-
-	.introduction p span
-	{
-		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
-	}
-}
-
-@media screen and (min-width: 375px) and (max-width: 959px)
-{
-	.introduction
-	{
-		font-family: monospace;
-		font-size: 40px;
-		text-align: center;
-		color: #FFFFFF;
-		/*color: #2998E4;*/
-		text-rendering: optimizeLegibility;
-	}
-
-	.introduction p span
-	{
-		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
-	}
-}
-
-@media screen and (min-width: 960px) and (max-width: 2000px)
-{
-	.introduction
-	{
-		font-family: monospace;
-		font-size: 60px;
-		text-align: center;
-		color: #FFFFFF;
-		/*color: #2998E4;*/
-		text-rendering: optimizeLegibility;
-	}
-
-	.introduction p span
-	{
-		text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
-	}
-}
-
+/*Container styling begins here*/
 .container
 {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
-
 @media (min-width: 768px)
 {
-  .container
-  {
-    width: 750px;
-  }
+	.container
+	{
+		width: 750px;
+  	}
 }
-
 @media (min-width: 992px)
 {
-  .container
-  {
-    width: 970px;
-  }
+	.container
+  	{
+		width: 970px;
+	}
 }
-
 @media (min-width: 1200px)
 {
-  .container
-  {
-    width: 1170px;
+	.container
+	{
+		width: 1170px;
+	}
+}
+
+
+.arrow
+{
+	
+	width: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left:-20px;
+	z-index: 0;
+}
+
+.bounce
+{
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }
 
-.left-nav a img
+
+/*#particles-js
 {
-	transition: all 0.3s ease-in;
+	position: absolute !important;
+}*/
+
+/*Media Queries for smaller phones e.g Nokia or old blackberry phones*/
+@media screen and (min-width: 0px) and (max-width: 299px)
+{
+	html
+	{
+		display:none;
+	}
+	
 }
 
-.left-nav a img:hover
+/*Media Queries for smart phones and phablets eg iphone 8 & Iphone 8 plus*/
+@media screen and (min-width: 300px) and (max-width: 374px)
 {
-	transform: scale(1.05);
-	transition: all 0.3s ease-in;
+		body
+		{
+			background: url("../img/darkbg.jpg") no-repeat #0a0d0f;
+		}
+		/*Navigation sevtion here*/
+		.nav
+		{
+			width: 100%;
+			padding: 10px;
+			border-bottom: 2px solid #fff;
+	    	z-index: -2;
+	    	position: fixed;
+			/*box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);*/
+		}
+		/*Left navigation section here*/
+		.left-nav p
+		{
+			font-family: 'Pacifico';
+			color: #FFFFFF;
+			font-size: 20px;
+		}
+
+
+		.first-page-section
+		{
+			
+	    	
+		}
+
+		/*Introduction section here*/
+		.introduction
+		{
+			height: 800px;
+		}
+		.introduction h1
+		{
+			text-align: center;
+			padding-top: 150px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-family: monospace;
+			font-size: 50px;
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+		.introduction p
+		{
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-family: monospace;
+			font-size: 50px;
+			color: #FFFFFF;
+		}
+
+		/*Portfolio Section here*/
+		.portfolio
+		{
+			background-color: #ffffff;
+			text-align: center;
+		}
+
+		.portfolio h1
+		{
+			padding: 20px;
+			font-size: 50px;
+			font-family: monospace;
+		}
+
+		.portfolio hr
+		{
+			color: black;
+			height: 2px;
+			background-color: black;
+		}
+
+		/*Portfolio grid section here*/
+		article
+		{
+			
+		}
+		article section
+		{
+			display: inline-block;
+			padding: 30px;
+			
+			
+			
+		}
+		article section video
+		{
+			width: 200px;
+			line-height: 
+		}
+		article a
+		{
+			color: #000;
+		}
+		article section img
+		{
+			width: 230px;
+			border-radius: 5px;
+			box-shadow: 2px 4px 6px 1px rgba(50, 50, 50, 0.5);
+			transition: all 0.3s ease-in;
+		}
+		article section img:hover
+		{
+			transform: scale(1.05);
+
+		}
+		article section p
+		{
+			font-family: monospace;
+			padding: 5px;
+			font-size: 20px;
+			
+		}
+
+		/*ABOUT SECTION*/
+		.tres
+		{
+		  min-height: 400px;
+		  padding-bottom: 100px;
+		  background: #0a0d0f;
+		}
+		.tres .info
+		{
+		    width: 70%;
+		    margin: 0 auto;
+		    padding-top: 100px;
+		}
+		.tres .info #cancionesRandom
+		{
+		      display: none;
+		      color: yellow;
+		      height: 20px;
+		      max-width: 400px;
+		      font-size: 15px;
+		      letter-spacing: 0.5px;
+		      font-family: monospace;
+		  }
+		.tres h2
+		{
+			text-align: center;
+		    font-family: monospace;
+		    font-weight: 700;
+		    font-size: 50px;
+		    margin: 0;
+		    color: white;
+		    letter-spacing: 2px;
+		    cursor: pointer;
+		}
+		.tres h2::selection
+		{
+		    background: yellow;
+		    color: #111111;
+		}
+		.tres .left
+		{
+		    width: 100%;
+		    height: 100%;
+		    /*padding-right: 30px;*/
+		    padding-bottom: 20px;
+		    box-sizing: border-box;
+		}
+		.tres .left a
+		{
+		    color: white;
+		    text-decoration: none;
+		}
+		.tres .left a::selection
+		{
+		    background: yellow;
+		    color: #111111;
+		}
+		.tres .left a:hover
+		{
+			color: yellow;
+		}
+		.tres .left p
+		{
+			text-align: center;
+		    font-family: monospace;
+		    font-size: 17px;
+			line-height: 1.5;
+			color: #efefef;
+		}
+		.tres .left p::selection
+		{
+		    background: yellow;
+		    color: #111111;
+		}
+		.tres .right
+		{
+		    width: 100%;
+		    height: 100%;
+		    float: right;
+		}
+		.tres .right p
+		{
+			text-decoration: underline;
+			text-align: center;
+		    font-family: monospace;
+		    font-size: 20px;
+		    line-height: 1.5;
+			color: #efefef;
+		}
+		.tres .right p::selection
+		{
+		    background: yellow;
+		    color: #111111;
+		}
+		.tres .right ul li
+		{
+			text-align: center;
+		    color: #efefef;
+		    font-family: monospace;
+		    font-size: 17px;
+		    margin-top: 5px;
+		}
+		.tres .right ul li::selection
+		{
+		    background: yellow;
+		    color: #111111;
+		}
+		/*Footer section*/
+		.footer
+		{
+			right: 0;
+			left: 0;
+			float: center;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.social-buttons div span
+		{
+			display: inline;
+			list-style-type: none;
+		}
+
+		.social-buttons div span a img
+		{
+			width: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+			transition: all 0.3s ease-in;
+		}
+		.footer p
+		{
+			padding: 30px;
+			color: #fff;
+			letter-spacing: 2px;
+			font-family: monospace;
+			font-size: 10px;
+		}
 }
 
-.footer
+
+/*Media Queries for devices slightly larger than tablets but not laptops or desktops e.g iPad Pro*/
+@media screen and (min-width: 375px) and (max-width: 959px)
 {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	float: center;
-	text-align: center;
-	padding: 10px;
+	body
+	{
+		background: url("../img/darkbg.jpg") no-repeat #0a0d0f;
+	}
+	/*Navigation sevtion here*/
+	.nav
+	{
+		width: 100%;
+		padding: 10px;
+		border-bottom: 2px solid #fff;
+    	z-index: -2;
+    	position: fixed;
+		/*box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);*/
+	}
+	/*Left navigation section here*/
+	.left-nav p
+	{
+		font-family: 'Pacifico';
+		color: #FFFFFF;
+		font-size: 20px;
+	}
+
+
+	.first-page-section
+	{
+		
+    	
+	}
+
+	/*Introduction section here*/
+	.introduction
+	{
+		height: 800px;
+	}
+	.introduction h1
+	{
+		text-align: center;
+		padding-top: 150px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-family: monospace;
+		font-size: 90px;
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+	.introduction p
+	{
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-family: monospace;
+		font-size: 50px;
+		color: #FFFFFF;
+	}
+
+	/*Portfolio Section here*/
+	.portfolio
+	{
+		background-color: #ffffff;
+		text-align: center;
+	}
+
+	.portfolio h1
+	{
+		padding: 20px;
+		font-size: 50px;
+		font-family: monospace;
+	}
+
+	.portfolio hr
+	{
+		color: black;
+		height: 2px;
+		background-color: black;
+	}
+
+	/*Portfolio grid section here*/
+	article
+	{
+		
+	}
+	article section
+	{
+		display: inline-block;
+		padding: 30px;
+		
+		
+		
+	}
+	article a
+	{
+		color: #000;
+	}
+	article section img
+	{
+		width: 300px;
+		border-radius: 5px;
+		box-shadow: 2px 4px 6px 1px rgba(50, 50, 50, 0.5);
+		transition: all 0.3s ease-in;
+	}
+	article section img:hover
+	{
+		transform: scale(1.05);
+
+	}
+	article section p
+	{
+		font-family: monospace;
+		padding: 5px;
+		font-size: 20px;
+		
+	}
+
+	/*ABOUT SECTION*/
+	.tres
+	{
+	  min-height: 400px;
+	  padding-bottom: 100px;
+	  background: #0a0d0f;
+	}
+	.tres .info
+	{
+	    width: 70%;
+	    margin: 0 auto;
+	    padding-top: 100px;
+	}
+	.tres .info #cancionesRandom
+	{
+	      display: none;
+	      color: yellow;
+	      height: 20px;
+	      max-width: 400px;
+	      font-size: 15px;
+	      letter-spacing: 0.5px;
+	      font-family: monospace;
+	  }
+	.tres h2
+	{
+		text-align: center;
+	    font-family: monospace;
+	    font-weight: 700;
+	    font-size: 50px;
+	    margin: 0;
+	    color: white;
+	    letter-spacing: 2px;
+	    cursor: pointer;
+	}
+	.tres h2::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .left
+	{
+	    width: 100%;
+	    height: 100%;
+	    /*padding-right: 30px;*/
+	    padding-bottom: 20px;
+	    box-sizing: border-box;
+	}
+	.tres .left a
+	{
+	    color: white;
+	    text-decoration: none;
+	}
+	.tres .left a::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .left a:hover
+	{
+		color: yellow;
+	}
+	.tres .left p
+	{
+	    font-family: monospace;
+	    font-size: 17px;
+		line-height: 1.5;
+		color: #efefef;
+		text-align: center;
+	}
+	.tres .left p::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .right
+	{
+	    width: 100%;
+	    height: 100%;
+	    float: right;
+	}
+	.tres .right p
+	{
+		text-decoration: underline;
+		text-align: center;
+	    font-family: monospace;
+	    font-size: 20px;
+	    line-height: 1.5;
+		color: #efefef;
+	}
+	.tres .right p::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .right ul li
+	{
+		text-align: center;
+	    color: #efefef;
+	    font-family: monospace;
+	    font-size: 17px;
+	    margin-top: 5px;
+	}
+	.tres .right ul li::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	/*Footer section*/
+	.footer
+	{
+		right: 0;
+		left: 0;
+		float: center;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.social-buttons div span
+	{
+		display: inline;
+		list-style-type: none;
+	}
+
+	.social-buttons div span a img
+	{
+		width: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+		transition: all 0.3s ease-in;
+	}
+	.footer p
+	{
+		padding: 30px;
+		color: #fff;
+		letter-spacing: 2px;
+		font-family: monospace;
+		font-size: 10px;
+	}
 }
 
-.social-buttons div span
+
+/*Media Queries for very large screens Such as laptops*/
+@media screen and (min-width: 960px) and (max-width: 2000px)
 {
-	display: inline;
-	list-style-type: none;
+	body
+	{
+		background: url("../img/darkbg.jpg") no-repeat #0a0d0f;
+	}
+	/*Navigation sevtion here*/
+	.nav
+	{
+		width: 100%;
+		padding: 10px;
+		border-bottom: 2px solid #fff;
+    	z-index: -2;
+    	position: fixed;
+		/*box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);*/
+	}
+	/*Left navigation section here*/
+	.left-nav p
+	{
+		font-family: 'Pacifico';
+		color: #FFFFFF;
+		font-size: 20px;
+	}
+
+
+	.first-page-section
+	{
+		
+    	
+	}
+
+	/*Introduction section here*/
+	.introduction
+	{
+		height: 800px;
+	}
+	.introduction h1
+	{
+		text-align: center;
+		padding-top: 200px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-family: monospace;
+		font-size: 100px;
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+	.introduction p
+	{
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-family: monospace;
+		font-size: 50px;
+		color: #FFFFFF;
+	}
+
+	/*Portfolio Section here*/
+	.portfolio
+	{
+		background-color: #ffffff;
+		text-align: center;
+
+	}
+
+	.portfolio h1
+	{
+		padding: 20px;
+		font-size: 50px;
+		font-family: monospace;
+	}
+
+	.portfolio hr
+	{
+		color: black;
+		height: 2px;
+		background-color: black;
+	}
+
+	/*Portfolio grid section here*/
+	article
+	{
+		
+	}
+	article section
+	{
+		display: inline-block;
+		padding: 30px;
+		
+		
+		
+	}
+	article section video
+	{
+		width: 300px;
+		line-height: 
+	}
+	article a
+	{
+		color: #000;
+	}
+	article section img
+	{
+		width: 300px;
+		border-radius: 5px;
+		box-shadow: 2px 4px 6px 1px rgba(50, 50, 50, 0.5);
+		transition: all 0.3s ease-in;
+	}
+	article section img:hover
+	{
+		transform: scale(1.05);
+
+	}
+	article section p
+	{
+		font-family: monospace;
+		padding: 5px;
+		font-size: 20px;
+		
+	}
+
+	/*ABOUT SECTION*/
+	.tres
+	{
+	  min-height: 400px;
+	  padding-bottom: 100px;
+	  background: #0a0d0f;
+	}
+	.tres .info
+	{
+	    width: 70%;
+	    margin: 0 auto;
+	    padding-top: 100px;
+	}
+	.tres .info #cancionesRandom
+	{
+	      display: none;
+	      color: yellow;
+	      height: 20px;
+	      max-width: 400px;
+	      font-size: 15px;
+	      letter-spacing: 0.5px;
+	      font-family: monospace;
+	  }
+	.tres h2
+	{
+		text-align: center;
+	    font-family: monospace;
+	    font-weight: 700;
+	    font-size: 68px;
+	    margin: 0;
+	    color: white;
+	    letter-spacing: 2px;
+	    cursor: pointer;
+	}
+	.tres h2::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .left
+	{
+	    width: 50%;
+	    height: 100%;
+	    float: left;
+	    padding-right: 30px;
+	    box-sizing: border-box;
+	}
+	.tres .left a
+	{
+	    color: white;
+	    text-decoration: none;
+	}
+	.tres .left a::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .left a:hover
+	{
+		color: yellow;
+	}
+	.tres .left p
+	{
+	    font-family: monospace;
+	    font-size: 17px;
+		line-height: 1.5;
+		color: #efefef;
+	}
+	.tres .left p::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .right
+	{
+	    width: 40%;
+	    height: 100%;
+	    float: right;
+	}
+	.tres .right p
+	{
+	    font-family: monospace;
+	    font-size: 17px;
+	    line-height: 1.5;
+		color: #efefef;
+	}
+	.tres .right p::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	.tres .right ul li
+	{
+	    color: #efefef;
+	    font-family: monospace;
+	    font-size: 17px;
+	    margin-top: 5px;
+	}
+	.tres .right ul li::selection
+	{
+	    background: yellow;
+	    color: #111111;
+	}
+	/*Footer section*/
+	.footer
+	{
+		right: 0;
+		left: 0;
+		float: center;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.social-buttons div span
+	{
+		display: inline;
+		list-style-type: none;
+	}
+
+	.social-buttons div span a img
+	{
+		width: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+		transition: all 0.3s ease-in;
+	}
+
+	.social-buttons div span a img:hover
+	{
+		margin-bottom: 5px;
+	}
+	.footer p
+	{
+		padding: 20px;
+		color: #fff;
+		letter-spacing: 2px;
+		font-family: monospace;
+		font-size: 20px;
+	}
 }
 
-.social-buttons div span a img
-{
-	width: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-	transition: all 0.3s ease-in;
-}
-
-.social-buttons div span a img:hover
-{
-	margin-bottom: 5px;
-}
 
 
 
@@ -161,9 +885,53 @@ body
 
 
 
+/*About me section*/
+	/*.about
+	{
 
+	}
+	.about h1
+	{
+		color: #fff;
+		font-family: monospace;
+		font-size: 50px;
+		padding:20px;
+		text-align: center;
+	}
+	.about ul
+	{
+		display: inline-block;
+	}
+	.about ul li
+	{
 
-
+	}
+	.about-section
+	{
+		display: inline-block;
+	}
+	.left-about
+	{
+		float: left;
+	}
+	.left-about p
+	{
+		width: 50%;
+		color: #fff;
+		line-height: 30px;
+		font-family: monospace;
+	}
+	.right-about
+	{
+		color: #fff;
+	}
+	.right-about ul li
+	{
+		font-size: 10px;
+		line-height: 30px;
+		
+		font-family: monospace;
+	}*/
 
 
 
