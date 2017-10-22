@@ -173,20 +173,16 @@ body {
 		/*Portfolio grid section here*/
 		article
 		{
-			
+			text-align: center;
 		}
 		article section
 		{
+			text-align: center;
 			display: inline-block;
 			padding: 30px;
 			
 			
 			
-		}
-		article section video
-		{
-			width: 200px;
-			line-height: 
 		}
 		article a
 		{
@@ -436,14 +432,13 @@ body {
 	/*Portfolio grid section here*/
 	article
 	{
-		
+		text-align: center;
 	}
 	article section
 	{
 		display: inline-block;
 		padding: 30px;
-		
-		
+		text-align: center;
 		
 	}
 	article a
