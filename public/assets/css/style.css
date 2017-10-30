@@ -17,8 +17,8 @@ body {
 /*Container styling begins here*/
 .container
 {
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -131,7 +131,7 @@ body {
 		.introduction h1
 		{
 			text-align: center;
-			padding-top: 150px;
+			padding-top: 100px;
 			margin-top: 30px;
 			margin-bottom: 30px;
 			font-family: monospace;
@@ -390,7 +390,7 @@ body {
 	.introduction h1
 	{
 		text-align: center;
-		padding-top: 150px;
+		padding-top: 100px;
 		margin-top: 30px;
 		margin-bottom: 30px;
 		font-family: monospace;
@@ -439,7 +439,6 @@ body {
 		display: inline-block;
 		padding: 30px;
 		text-align: center;
-		
 	}
 	article a
 	{
@@ -608,7 +607,7 @@ body {
 
 
 /*Media Queries for very large screens Such as laptops*/
-@media screen and (min-width: 960px) and (max-width: 2000px)
+@media screen and (min-width: 960px)
 {
 	body
 	{
@@ -715,10 +714,13 @@ body {
 		border-radius: 5px;
 		box-shadow: 2px 4px 6px 1px rgba(50, 50, 50, 0.5);
 		transition: all 0.3s ease-in;
+		filter: grayscale(1);
 	}
 	article section img:hover
 	{
 		transform: scale(1.05);
+		filter: grayscale(0);
+		box-shadow: 2px 2px 10px 10px rgba(50, 50, 50, 0.5);
 
 	}
 	article section p
@@ -855,11 +857,13 @@ body {
 		margin-right: auto;
 		padding: 20px;
 		transition: all 0.3s ease-in;
+		filter: grayscale(1);
 	}
 
 	.social-buttons div span a img:hover
 	{
 		margin-bottom: 5px;
+		filter: grayscale(0);
 	}
 	.footer p
 	{
