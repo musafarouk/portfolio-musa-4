@@ -47,7 +47,13 @@ $(document).ready(function() {
     loop();
 });
 
+// Scroll reveal section
+window.sr = ScrollReveal();
+sr.reveal('.foo');
+sr.reveal('.bar');
 
+// Customizing a reveal set
+sr.reveal('.bar', { duration: 1200 });
 
 });
 

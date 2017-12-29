@@ -132,9 +132,8 @@ body {
 		{
 			text-align: center;
 			padding-top: 100px;
-			margin-top: 30px;
 			margin-bottom: 30px;
-			font-family: monospace;
+			font-family: 'Product Sans';
 			font-size: 50px;
 			color: #FFFFFF;
 			text-decoration: underline;
@@ -341,7 +340,7 @@ body {
 		}
 		.footer p
 		{
-			padding: 30px;
+			padding: 20px;
 			color: #fff;
 			letter-spacing: 2px;
 			font-family: monospace;
@@ -391,9 +390,8 @@ body {
 	{
 		text-align: center;
 		padding-top: 100px;
-		margin-top: 30px;
 		margin-bottom: 30px;
-		font-family: monospace;
+		font-family: 'Product Sans';
 		font-size: 90px;
 		color: #FFFFFF;
 		text-decoration: underline;
@@ -647,9 +645,8 @@ body {
 	{
 		text-align: center;
 		padding-top: 200px;
-		margin-top: 30px;
 		margin-bottom: 30px;
-		font-family: monospace;
+		font-family: 'Product Sans';
 		font-size: 100px;
 		color: #FFFFFF;
 		text-decoration: underline;

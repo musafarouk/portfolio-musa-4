@@ -21,8 +21,8 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 //Select port to use
-const port = process.env.PORT || 3004
+const port = process.env.PORT || 3005
 
 //starting the server 
-app.listen(port, () => console.log(`server tsrting on localhost:${port}`))
+app.listen(port, () => console.log(`server started on localhost:${port}`))
 

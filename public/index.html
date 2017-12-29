@@ -23,10 +23,34 @@
 
 		<!-- Scripts are loaded here -->
 		<script src="assets/js/jquery-3.2.1.js"></script>
+		<script src="assets/js/scrollreveal.min.js"></script>
 		<script src="assets/js/particles.js"></script>
 		<script src="assets/js/main.js"></script>
-		
-		
+
+		<!-- Start of Async Drift Code -->
+<script>
+!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('cgr87thwf9w5');
+</script>
+<!-- End of Async Drift Code -->
 	</head>
 <body>
 <!-- Audio that plays as soon as page loads -->
@@ -50,6 +74,7 @@
 
 
 <!-- Introduction section -->
+<div class="foo">
 <div class="introduction">
 	<div class="container">
 		<h1>Musa Farouk</h1>
@@ -63,6 +88,7 @@
 
 
 <!-- Portfolio Section here -->
+<div class="bar">
 <div class="portfolio" id="portfolio">
 	<div class="container">
 		<h1>WORK</h1>
@@ -96,7 +122,7 @@
 		</article>
 	</div>
 </div>
-
+</div>
 <!-- About section -->
 <!-- <div class="about">
 	<div class="container">
@@ -122,6 +148,7 @@
 
 <!-- About section -->
 <<!-- div class="container"> -->
+<div class="bar">
 <div class="section tres" id="link3">
 	<div class="info">
 				<h2>ABOUT ME</h2>
@@ -145,10 +172,11 @@
 				</div>
 	</div> 
 </div>
-
+</div>
 <br><br>
 
 <!-- Footer section -->
+<div class="bar">
 <div class="container">
 <div class="footer">
 		<div class="right-footer">
@@ -161,10 +189,11 @@
 				</div>
 			</div>
 		</div>
+		<p>Made with &#10084; in Abuja, Nigeria</p>
 		<p>&copy; 2017 | MUSA FAROUK</p>
 	</div>
 </div>
-
+</div>
 <!-- <div id="particles-js"></div> -->
 </body>
 </html>
